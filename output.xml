@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160310 14:57:09.624" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<suite source="C:\Users\SESA279161\IdeaProjects\testing\src\test2.robot" id="s1" name="Test2">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160310 14:57:09.804" level="INFO">Opening browser 'ie' to base url 'http://google.com'</msg>
+<status status="PASS" endtime="20160310 14:57:15.824" starttime="20160310 14:57:09.804"></status>
+</kw>
+<test id="s1-t1" name="Cautam google si verificam rezultatele">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+</arguments>
+<msg timestamp="20160310 14:57:15.824" level="INFO">Opening url 'http://google.com'</msg>
+<status status="PASS" endtime="20160310 14:57:16.719" starttime="20160310 14:57:15.824"></status>
+</kw>
+<kw name="Google si verifica rezultatele">
+<arguments>
+<arg>devops</arg>
+<arg>devops</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>${searchkey}</arg>
+</arguments>
+<msg timestamp="20160310 14:57:16.719" level="INFO">Typing text 'devops' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20160310 14:57:17.198" starttime="20160310 14:57:16.719"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>name=btnG</arg>
+</arguments>
+<msg timestamp="20160310 14:57:17.199" level="INFO">Clicking button 'name=btnG'.</msg>
+<status status="PASS" endtime="20160310 14:57:18.435" starttime="20160310 14:57:17.198"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20160310 14:57:19.607" starttime="20160310 14:57:18.435"></status>
+</kw>
+<status status="PASS" endtime="20160310 14:57:19.607" starttime="20160310 14:57:16.719"></status>
+</kw>
+<kw name="Google si verifica rezultatele">
+<arguments>
+<arg>deveo</arg>
+<arg>deveo</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>${searchkey}</arg>
+</arguments>
+<msg timestamp="20160310 14:57:19.607" level="INFO">Typing text 'deveo' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20160310 14:57:21.585" starttime="20160310 14:57:19.607"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>name=btnG</arg>
+</arguments>
+<msg timestamp="20160310 14:57:21.585" level="INFO">Clicking button 'name=btnG'.</msg>
+<status status="PASS" endtime="20160310 14:57:24.232" starttime="20160310 14:57:21.585"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20160310 14:57:24.742" starttime="20160310 14:57:24.232"></status>
+</kw>
+<status status="PASS" endtime="20160310 14:57:24.742" starttime="20160310 14:57:19.607"></status>
+</kw>
+<kw name="Google si verifica rezultatele">
+<arguments>
+<arg>robot framework</arg>
+<arg>robotframework.org</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>${searchkey}</arg>
+</arguments>
+<msg timestamp="20160310 14:57:24.742" level="INFO">Typing text 'robot framework' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20160310 14:57:26.810" starttime="20160310 14:57:24.742"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>name=btnG</arg>
+</arguments>
+<msg timestamp="20160310 14:57:26.810" level="INFO">Clicking button 'name=btnG'.</msg>
+<status status="PASS" endtime="20160310 14:57:29.361" starttime="20160310 14:57:26.810"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20160310 14:57:29.691" starttime="20160310 14:57:29.361"></status>
+</kw>
+<status status="PASS" endtime="20160310 14:57:29.691" starttime="20160310 14:57:24.742"></status>
+</kw>
+<tags>
+<tag>templated-tests</tag>
+</tags>
+<status status="PASS" endtime="20160310 14:57:29.691" critical="yes" starttime="20160310 14:57:15.824"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20160310 14:57:31.741" starttime="20160310 14:57:29.691"></status>
+</kw>
+<doc>Demonstrate silenium</doc>
+<status status="PASS" endtime="20160310 14:57:31.741" starttime="20160310 14:57:09.624"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">templated-tests</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test2" pass="1">Test2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
