@@ -5,6 +5,6 @@ Library     Selenium2Library
 
 *** Testcases ***
 Cautam google si verificam rezultatele
-     Open Browser   http://google.com     firefox
+     Open Browser   http://google.com     chrome
 
 *** Keywords ***
